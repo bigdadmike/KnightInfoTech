@@ -32,7 +32,6 @@
         }
 
         .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
-
         .logo-main { max-width: 400px; margin-bottom: 2rem; border-radius: 8px; }
 
         .tagline { 
@@ -58,11 +57,7 @@
 
         .video-wrapper iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
+            top: 0; left: 0; width: 100%; height: 100%; border: 0;
         }
 
         .grid {
@@ -114,6 +109,14 @@
         .feature-list { list-style: none; padding: 0; margin: 1.5rem 0; }
         .feature-list li::before { content: "✓ "; color: var(--accent-blue); font-weight: bold; }
 
+        .case-study {
+            background: #1c2128;
+            border-left: 4px solid var(--accent-blue);
+            padding: 2rem;
+            margin: 4rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
         footer { text-align: center; padding: 4rem; border-top: 1px solid #30363d; color: var(--text-dim); }
     </style>
 </head>
@@ -123,40 +126,41 @@
     <img src="assets/KITS_Final_Crest.png" alt="Knight InfoTech Studios Crest" class="logo-main">
     <div class="tagline">Infrastructure Intelligence. Accelerated.</div>
     <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-        30+ Years of Enterprise Expertise unbundled into field-proven tools. <br>
-        Battle-tested for 6 months in production environments.
+        30+ Years of Michael Knight's Enterprise Expertise. <br>
+        Built for Engineers, by a Veteran Engineer.
     </p>
 </header>
 
 <div class="container">
     <div class="video-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/ESxAx809Dk4?rel=0" 
-            title="KITS Software Demo" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/ESxAx809Dk4?rel=0" title="KITS Software Demo" allowfullscreen></iframe>
     </div>
 
+    <section class="case-study">
+        <h3>Case Study: From Blind Spots to Full Visibility</h3>
+        <p><em>"During a recent engagement, a large-scale organization was operating with near-zero documentation across their infrastructure estates. They relied on tribal knowledge and manual lists that were years out of date."</em></p>
+        <p>I deployed and customized my suite for their specific environment. By the end of the engagement, they had <strong>full visibility and automated documentation</strong>, including a fully implemented certificate management system. They transitioned from guessing to being <strong>true wardens of their estate.</strong></p>
+    </section>
+
     <section id="launch">
-        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">Windows Server Fleet Auditor <span class="limited-badge">Soft Launch</span></h2>
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">Phase 1: Windows Server Fleet Auditor</h2>
         
         <div class="grid">
             <div class="card">
-                <h3>The Engine</h3>
-                <p>The same PowerShell-driven discovery engine used to audit massive enterprise estates.</p>
+                <h3>The Visibility Engine</h3>
+                <p>Actionable data across the three critical pillars of infrastructure management:</p>
                 <ul class="feature-list">
-                    <li>100% Agentless (WMI/PowerShell)</li>
-                    <li>Full Source Code Provided</li>
-                    <li>6 Months Production Debugging</li>
+                    <li><strong>Audit & Security:</strong> 80+ OS Benchmarks & Patch compliance.</li>
+                    <li><strong>Troubleshooting:</strong> Instant forensic data for root-cause analysis.</li>
+                    <li><strong>Documentation:</strong> Full, automated inventory of your entire Windows estate.</li>
                 </ul>
-                <p style="font-size: 1.5rem; font-weight: bold;">$99.95 <span style="font-size: 0.9rem; color: var(--text-dim); font-weight: normal;">(First 500 Only)</span></p>
+                <p style="font-size: 1.5rem; font-weight: bold;">$99.95 <span class="limited-badge">First 500 Intro Offer</span></p>
                 <a href="#" class="btn">Get Early Access</a>
             </div>
 
             <div class="card">
                 <h3>Live Evidence</h3>
-                <p>Verify the quality of our automated output before you buy.</p>
+                <p>Real info. Actionable info. View the output from our production-hardened engine:</p>
                 <div style="margin-top: 2rem;">
                     <p><strong>Fleet Dashboard</strong><br>
                     <a href="Demo/Fleet_Dashboard.html" class="btn btn-outline" target="_blank">View Live Demo</a></p>
@@ -172,10 +176,10 @@
     </section>
 
     <section style="text-align: center; background: var(--card-bg); padding: 4rem; border-radius: 12px; border: 1px solid #30363d;">
-        <h2>The "No Black Box" Promise</h2>
+        <h2>The C0nt1nu1ty Suite</h2>
         <p style="max-width: 800px; margin: 0 auto; color: var(--text-dim);">
-            I’m Michael Knight. After 30 years in IT Infrastructure, I know you don't trust mysterious binaries on your production servers. 
-            That's why I provide the full PowerShell source code. Audit it, verify it, and run it with total confidence.
+            The Windows Auditor is just the beginning. We are preparing a full-bodied release of our other key Infrastructure visibility tools. This introductory offer is designed to build awareness for tools built with 30 years of veteran "in-the-trenches" experience. 
+            <strong>No black boxes. Just the source code and the truth about your infrastructure.</strong>
         </p>
     </section>
 </div>
