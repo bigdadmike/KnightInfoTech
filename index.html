@@ -106,9 +106,6 @@
             font-weight: bold;
         }
 
-        .feature-list { list-style: none; padding: 0; margin: 1.5rem 0; }
-        .feature-list li::before { content: "✓ "; color: var(--accent-blue); font-weight: bold; }
-
         .case-study {
             background: #1c2128;
             border-left: 4px solid var(--accent-blue);
@@ -149,13 +146,14 @@
             <div class="card">
                 <h3>The Visibility Engine</h3>
                 <p>Actionable data across the three critical pillars of infrastructure management:</p>
-                <ul class="feature-list">
-                    <li><strong>Audit & Security:</strong> 80+ OS Benchmarks & Patch compliance.</li>
-                    <li><strong>Troubleshooting:</strong> Instant forensic data for root-cause analysis.</li>
-                    <li><strong>Documentation:</strong> Full, automated inventory of your entire Windows estate.</li>
+                <ul class="feature-list" style="list-style: none; padding: 0; margin: 1.5rem 0;">
+                    <li><span style="color: var(--accent-blue);">✓</span> <strong>Audit & Security:</strong> 80+ OS Benchmarks & Patch compliance.</li>
+                    <li><span style="color: var(--accent-blue);">✓</span> <strong>Troubleshooting:</strong> Instant forensic data for root-cause analysis.</li>
+                    <li><span style="color: var(--accent-blue);">✓</span> <strong>Documentation:</strong> Full, automated inventory of your entire Windows estate.</li>
                 </ul>
                 <p style="font-size: 1.5rem; font-weight: bold;">$99.95 <span class="limited-badge">First 500 Intro Offer</span></p>
-                <a href="#" class="btn">Get Early Access</a>
+                
+                <a href="https://knightinfotech.lemonsqueezy.com/checkout/buy/b6e0589a-1d91-449e-824d-4e62eb442e4f" class="btn">Get Early Access</a>
             </div>
 
             <div class="card">
@@ -175,12 +173,22 @@
         </div>
     </section>
 
-    <section style="text-align: center; background: var(--card-bg); padding: 4rem; border-radius: 12px; border: 1px solid #30363d;">
-        <h2>The C0nt1nu1ty Suite</h2>
-        <p style="max-width: 800px; margin: 0 auto; color: var(--text-dim);">
-            The Windows Auditor is just the beginning. We are preparing a full-bodied release of our other key Infrastructure visibility tools. This introductory offer is designed to build awareness for tools built with 30 years of veteran "in-the-trenches" experience. 
-            <strong>No black boxes. Just the source code and the truth about your infrastructure.</strong>
-        </p>
+    <section style="margin-top: 4rem; padding: 3rem; background: linear-gradient(90deg, #161b22 0%, #0d1117 100%); border-radius: 12px; border: 1px solid var(--accent-blue);">
+        <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="color: var(--accent-blue);">Built by a 30-Year Veteran</h2>
+                <p><strong>"I’m a CLI junkie for doing, but a GUI enthusiast for seeing."</strong></p>
+                <p>Michael Knight has spent three decades as an Infrastructure Consultant and Architect. The C0nt1nu1ty Suite is the result of 30 years of "sharpening the saw"—combining the raw power of PowerShell automation with the elegant reporting required for modern enterprise visibility.</p>
+            </div>
+            <div style="flex: 1; min-width: 300px; color: var(--text-dim); font-size: 0.9rem; border-left: 1px solid #30363d; padding-left: 2rem;">
+                <p><strong>The Tech Stack:</strong></p>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-blue);">✓</span> 131,000+ Lines of PowerShell Logic [cite: 3]</li>
+                    <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-blue);">✓</span> 22 Domain-Specific Auditors [cite: 3]</li>
+                    <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-blue);">✓</span> 6 Months of Recent Enterprise Hardening [cite: 81]</li>
+                </ul>
+            </div>
+        </div>
     </section>
 </div>
 
