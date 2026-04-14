@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight InfoTech Studios | KITS Infrastructure Intelligence</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-blue: #58a6ff;
+            --accent-red: #ff4d4d;
+            --text-main: #c9d1d9;
+            --text-dim: #8b949e;
+            --success-green: #238636;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+            border-bottom: 1px solid var(--accent-red);
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+
+        .logo-main { max-width: 450px; margin-bottom: 2rem; }
+
+        .tagline { 
+            font-size: 1.4rem; 
+            color: var(--accent-red); 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .hero-video {
+            background: #000;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            margin-bottom: 4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #30363d;
+            padding: 2.5rem;
+            border-radius: 12px;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover { border-color: var(--accent-red); }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--success-green);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--accent-blue);
+            color: var(--accent-blue);
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .limited-badge {
+            background: var(--accent-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .feature-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+        .feature-list li::before { content: "✓ "; color: var(--accent-blue); font-weight: bold; }
+
+        footer { text-align: center; padding: 4rem; border-top: 1px solid #30363d; color: var(--text-dim); }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="assets/KITS_ActiveScan_Logo.png" alt="Knight InfoTech Studios Crest" class="logo-main">
+    <div class="tagline">Infrastructure Intelligence. Accelerated.</div>
+    <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
+        30+ Years of Enterprise Expertise unbundled into field-proven tools. 
+        Battle-tested for 6 months in production environments.
+    </p>
+</header>
+
+<div class="container">
+    <div class="hero-video">
+        <video width="100%" controls poster="assets/dashboard-preview.png">
+            <source src="assets/Screen_Recording_2026-04-14_120330.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <section id="launch">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 3rem;">Windows Server Fleet Auditor <span class="limited-badge">Soft Launch</span></h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>The Engine</h3>
+                <p>The same PowerShell-driven discovery engine used to audit massive enterprise estates.</p>
+                <ul class="feature-list">
+                    <li>100% Agentless (WMI/PowerShell)</li>
+                    <li>Full Source Code Provided</li>
+                    <li>6 Months Production Debugging</li>
+                </ul>
+                <p style="font-size: 1.5rem; font-weight: bold;">$99.95 <span style="font-size: 0.9rem; color: var(--text-dim); font-weight: normal;">(First 500 Only)</span></p>
+                <a href="#" class="btn">Get Early Access</a>
+            </div>
+
+            <div class="card">
+                <h3>Live Evidence</h3>
+                <p>Verify the quality of our automated output before you buy.</p>
+                <div style="margin-top: 2rem;">
+                    <p><strong>Fleet Dashboard</strong><br>
+                    <a href="demo/Fleet_Dashboard.html" class="btn btn-outline" target="_blank">View Live Demo</a></p>
+                    <br>
+                    <p><strong>Server Deep Report</strong><br>
+                    <a href="demo/Server_VDI-DEN-MC07-01_Deep.html" class="btn btn-outline" target="_blank">View Live Demo</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center; background: var(--card-bg); padding: 4rem; border-radius: 12px; border: 1px solid #30363d;">
+        <h2>The "No Black Box" Promise</h2>
+        <p style="max-width: 800px; margin: 0 auto; color: var(--text-dim);">
+            I’m Michael Knight. After 30 years in IT Infrastructure, I know you don't trust mysterious binaries on your production servers. 
+            That's why I provide the full PowerShell source code. Audit it, verify it, and run it with total confidence.
+        </p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Knight InfoTech Studios (KITS). All rights reserved.<br>
+    <a href="terms.html" style="color: var(--accent-blue);">Terms of Sale & Software License</a>
+</footer>
+
+</body>
+</html>
