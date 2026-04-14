@@ -33,7 +33,7 @@
 
         .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
 
-        .logo-main { max-width: 450px; margin-bottom: 2rem; }
+        .logo-main { max-width: 400px; margin-bottom: 2rem; border-radius: 8px; }
 
         .tagline { 
             font-size: 1.4rem; 
@@ -44,13 +44,26 @@
             margin-bottom: 1rem;
         }
 
-        .hero-video {
-            background: #000;
+        /* Responsive YouTube Container */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
             border: 1px solid #30363d;
             border-radius: 12px;
-            overflow: hidden;
             box-shadow: 0 20px 40px rgba(0,0,0,0.6);
             margin-bottom: 4rem;
+            background: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         .grid {
@@ -111,17 +124,19 @@
     <img src="assets/KITS_ActiveScan_Logo.png" alt="Knight InfoTech Studios Crest" class="logo-main">
     <div class="tagline">Infrastructure Intelligence. Accelerated.</div>
     <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-        30+ Years of Enterprise Expertise unbundled into field-proven tools. 
+        30+ Years of Enterprise Expertise unbundled into field-proven tools. <br>
         Battle-tested for 6 months in production environments.
     </p>
 </header>
 
 <div class="container">
-    <div class="hero-video">
-        <video width="100%" controls poster="assets/dashboard-preview.png">
-            <source src="assets/Screen_Recording_2026-04-14_120330.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/ESxAx809Dk4?rel=0" 
+            title="KITS Software Demo" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
     </div>
 
     <section id="launch">
